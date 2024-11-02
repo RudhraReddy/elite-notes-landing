@@ -45,7 +45,7 @@ const MenuItem = ({
   <li>
     <Link
       href={href}
-      className="text-[24px] font-montserrat font-medium text-background hover:text-primary-muted transition-colors duration-300 inline-block py-1"
+      className="text-[24px] font-montserrat font-medium text-background transition-colors duration-300 inline-block py-1"
     >
       {children}
     </Link>
@@ -65,15 +65,15 @@ const FullscreenMenu = () => {
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="container h-full flex flex-col pt-24">
-          {/* Large MENU text */}
-          <h1 className="text-[260px] font-extrabold text-background leading-none">
+        <div className="container h-full flex flex-col">
+          {/* Large MENU text - adjusted position */}
+          <h1 className="text-[260px] font-extrabold text-background leading-none mt-60 -ml-40">
             MENU
           </h1>
 
-          {/* Navigation items - now centered and lower */}
-          <nav className="flex-1 flex items-center justify-center">
-            <ul className="space-y-0 -mt-30">
+          {/* Navigation items - adjusted position */}
+          <nav className="flex-1 flex items-center">
+            <ul className="space-y-0 -mt-40 ml-72">
               <MenuItem href="/">Home</MenuItem>
               <MenuItem href="/about">About</MenuItem>
               <MenuItem href="/features">Features</MenuItem>

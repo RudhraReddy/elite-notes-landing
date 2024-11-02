@@ -23,7 +23,7 @@ export default function ParallaxSection() {
         <div className="absolute inset-0">
           {/* Top Left Image */}
           <Parallax
-            translateY={[-15, 15]}
+            translateY={[-25, 25]}
             className="absolute -top-44 -left-28"
           >
             <Image
@@ -36,7 +36,7 @@ export default function ParallaxSection() {
 
           {/* Bottom Left Image */}
           <Parallax
-            translateY={[20, -20]}
+            translateY={[25, -100]}
             className="absolute -bottom-24 -left-32"
           >
             <Image
@@ -49,7 +49,7 @@ export default function ParallaxSection() {
 
           {/* Top Right Image */}
           <Parallax
-            translateY={[-15, 15]}
+            translateY={[-50, 25]}
             className="absolute -top-24 -right-52"
           >
             <Image
@@ -62,7 +62,7 @@ export default function ParallaxSection() {
 
           {/* Bottom Right Image */}
           <Parallax
-            translateY={[15, -15]}
+            translateY={[20, -45]}
             className="absolute -bottom-0 -right-32"
           >
             <Image
