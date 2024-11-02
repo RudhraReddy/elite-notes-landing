@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 13%; /* #212121 */
+    --foreground: 26 9% 82%; /* #D5CDC4 */
+
+    --primary: 26 9% 82%; /* #D5CDC4 */
+    --primary-foreground: 0 0% 13%; /* #212121 */
+
+    --primary-muted: 26 9% 72%;
+    --background-light: 0 0% 18%;
+  }
+}
+
+@layer components {
+  .heading-bold {
+    @apply font-montserrat font-bold;
+  }
+
+  .heading-regular {
+    @apply font-montserrat font-normal;
+  }
+
+  .body-text {
+    @apply font-poppins font-normal;
+  }
+}
+
+/* Move default styles to utilities layer */
+@layer utilities {
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-poppins);
+  }
+}
