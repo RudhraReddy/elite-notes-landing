@@ -20,14 +20,16 @@ const MenuButton = ({
       <span
         className={`absolute h-0.5 w-10 transition-all duration-300 ease-in-out
           ${
-            isOpen ? "rotate-45 bg-background" : "translate-y-[-6px] bg-primary"
+            isOpen
+              ? "w-8 rotate-45 bg-background"
+              : "translate-y-[-6px] bg-primary"
           }`}
       />
       <span
         className={`absolute h-0.5 transition-all duration-300 ease-in-out right-4
           ${
             isOpen
-              ? "w-10 -rotate-45 bg-background right-0"
+              ? "w-8 -rotate-45 bg-background right-1"
               : "w-6 translate-y-[6px] bg-primary"
           }`}
       />
