@@ -12,6 +12,7 @@ import ParallaxSection from "@/components/ParallaxSection";
 import FullscreenMenu from "@/components/fullmenu";
 import ContentSection from "@/components/feature_comp";
 import ThemeSwitch from "@/components/Theme_switch";
+import FooterComp from "@/components/footer_comp";
 
 // Import images
 import mainFeat from "@/components/assets/Main_Side.png";
@@ -59,7 +60,7 @@ export default function Home() {
                   <Input
                     type="email"
                     placeholder="Work email"
-                    className="w-full h-12 bg-transparent border-t-0 border-x-0 border-b-2 border-primary-muted rounded-none focus:border-primary focus:ring-0 text-foreground text-sm placeholder:text-primary-muted/20"
+                    className="w-full h-12 bg-transparent border-t-0 border-x-0 border-b-2 border-primary-muted rounded-none focus:border-primary focus:ring-0 text-foreground text-sm placeholder:text-primary-muted/60"
                   />
                 </div>
                 <Button
@@ -120,6 +121,7 @@ export default function Home() {
           buttonText="Try for Free"
         />
         <ThemeSwitch />
+        <FooterComp />
       </main>
     </ParallaxProvider>
   );

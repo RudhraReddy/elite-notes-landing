@@ -21,7 +21,7 @@ const MenuButton = ({
         className={`absolute h-0.5 w-10 transition-all duration-300 ease-in-out
           ${
             isOpen
-              ? "w-8 rotate-45 bg-background"
+              ? "w-10 rotate-45 bg-background"
               : "translate-y-[-6px] bg-primary"
           }`}
       />
@@ -29,7 +29,7 @@ const MenuButton = ({
         className={`absolute h-0.5 transition-all duration-300 ease-in-out right-4
           ${
             isOpen
-              ? "w-8 -rotate-45 bg-background right-1"
+              ? "w-10 -rotate-45 bg-background right-0"
               : "w-6 translate-y-[6px] bg-primary"
           }`}
       />
@@ -69,7 +69,7 @@ const FullscreenMenu = () => {
       >
         <div className="container h-full flex flex-col">
           {/* Large MENU text - adjusted position */}
-          <h1 className="text-[260px] font-extrabold text-background leading-none mt-60 -ml-40">
+          <h1 className="text-[260px] font-black text-background leading-none mt-60 -ml-40">
             MENU
           </h1>
 

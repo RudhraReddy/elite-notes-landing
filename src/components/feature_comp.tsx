@@ -21,10 +21,12 @@ const ContentSection = ({
 }: ContentSectionProps) => {
   const contentSection = (
     <div className="flex-1 space-y-10">
-      <h2 className="text-5xl font-montserrat text-foreground">{title}</h2>
+      <h2 className="text-5xl font-medium font-montserrat text-foreground">
+        {title}
+      </h2>
       <p className="text-lg text-foreground/80 max-w-xl">{description}</p>
       {buttonText && (
-        <Button className="mt-6 bg-primary text-primary-foreground hover:bg-primary/90">
+        <Button className="mt-6 w-64 bg-primary text-lg text-primary-foreground hover:bg-primary/80">
           {buttonText}
         </Button>
       )}
