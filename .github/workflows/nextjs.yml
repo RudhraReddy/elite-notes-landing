@@ -62,10 +62,12 @@ jobs:
       - name: Install Dependencies and Resolve React Version Conflict
         run: |
           if [[ ${{ steps.detect-package-manager.outputs.manager }} == "npm" ]]; then
-            npm install react@18.x.x react-dom@18.x.x --force # Replace x.x.x with your desired 18.x version
+            npm install react@18.x.x react-dom@18.x.x --force # Replace x.x.x with the specific 18 version
             npm cache clean --force
-            rm -rf node_modules package-lock.json # Important for consistency
-            npm ci # Use npm ci for clean install with correct versions
+            rm -rf node_modules package-lock.json # Remove to generate a new one
+            npm install # This is the KEY change: Generate the package-lock.json FIRST
+            npm ci        # Now use npm ci
+            npm audit fix  # Fix any vulnerabilities
           elif [[ ${{ steps.detect-package-manager.outputs.manager }} == "yarn" ]]; then
             yarn add react@18.x.x react-dom@18.x.x --force
             yarn cache clean
