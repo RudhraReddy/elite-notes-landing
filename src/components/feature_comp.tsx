@@ -26,7 +26,7 @@ const ContentSection = ({
       </h2>
       <p className="text-lg text-foreground/80 max-w-xl">{description}</p>
       {buttonText && (
-        <Button className="mt-6 w-64 bg-primary text-lg text-primary-foreground hover:bg-primary/80">
+        <Button className="mt-6 h-14 w-64 bg-primary text-lg text-primary-foreground hover:bg-primary/80">
           {buttonText}
         </Button>
       )}
